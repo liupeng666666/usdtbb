@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.other.Dao.BbFreeDao">
+
+    <insert id="BbFreeInsert">
+        insert into bb_free(pid,userid,currency_news_id,sort)
+        values (uuid(),#{userid},#{id},(select a.sort from (select IFNULL(max(sort),0)+1 as 'sort' from bb_free where
+        userid=#{userid}) as a))
+    </insert>
+    <delete id="BbFreeDel">
+        delete from bb_free where userid=#{userid} and currency_news_id=#{id}
+    </delete>
+    <select id="BbFreeSelectbySort" resultType="map">
+        SELECT bcn.*,bc1.img,bc1.name as bcname,bc1.market,bc1.type,bc1.character,bf.sort FROM bb_currency_news bcn
+        join(select * from bb_currency where couple=0) bc1 on bc1.pid=bcn.currency_left
+        join(select * from bb_currency b where b.style=1) bc2 on bc2.pid=bcn.currency_right
+        left join(select * from bb_free where userid=1) bf on bf.currency_news_id=bcn.pid
+        where bcn.state=0 and bcn.isdel=0 and bcn.currency_left!=bcn.currency_right
+        <if test="currency_right!=null and currency_right!=''">
+            and bcn.currency_right=#{currency_right}
+        </if>
+
+    </select>
+    <update id="BbFreeUpdate">
+        update bb_free set sort=#{sort} where userid=#{userid} and currency_news_id=#{currencyid}
+    </update>
+
+</mapper>

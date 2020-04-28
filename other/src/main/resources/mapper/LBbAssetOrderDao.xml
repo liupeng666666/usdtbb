@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.other.Dao.LBbAssetOrederDao">
+    <update id="LSubAssetAdd">
+        update usdt.sub_money
+        <set>
+            <if test="map.currencyToName == 'USDT'">
+                surplus = surplus + #{map.surplusAdd},
+            </if>
+
+            <if test="map.currencyToName == 'BRU'">
+                bur_money = bur_money + #{map.surplusAdd},
+            </if>
+            updatetime = now()
+        </set>
+        where pid = #{userid}
+        and isdel = '0'
+    </update>
+    <update id="LSubAssetSub">
+        update usdt.sub_money
+        <set>
+            <if test="map.currencyFrmName == 'USDT'">
+                surplus = surplus - #{map.surplusSub},
+            </if>
+
+            <if test="map.currencyFrmName == 'BRU'">
+                bur_money = bur_money - #{map.surplusSub},
+            </if>
+            updatetime = now()
+        </set>
+        where pid = #{userid}
+        and isdel = '0'
+    </update>
+
+    <update id="LFbAssetSub" parameterType="map">
+        update usdtfb.fb_money
+        set
+        surplus = surplus - #{map.surplusSub},
+        updatetime = now()
+        where userid = #{userid}
+        and currencyid = #{map.currencyid}
+        and isdel = '0'
+    </update>
+
+    <update id="LFbAssetAdd" parameterType="map">
+        update usdtfb.fb_money
+        set
+        surplus = surplus + #{map.surplusAdd},
+        updatetime = now()
+        where userid = #{userid}
+        and currencyid = #{map.currencyid}
+        and isdel = '0'
+    </update>
+    <insert id="LFbAssetInsert">
+        INSERT INTO usdtfb.`fb_money` ( `pid`, `name`, `surplus`, `frozen`, `createtime`, `updatetime`, `isdel`,
+        `state`, `currencyid`, `userid`)
+        VALUES (UUID(), #{map.name}, #{map.surplus},0, NOW(), NOW(), '0', '0', #{map.currencyid},#{userid} )
+
+    </insert>
+    <insert id="LFbAssetTransferIns">
+        INSERT INTO usdtfb.fb_transfer (pid,from_currency, to_currency, from_money, to_money, createtime, userid, state,
+        isdel, type )
+        VALUES
+        ( UUID(), #{from_currency}, #{to_currency}, #{from_money}, #{to_money}, NOW(), #{userid}, '0', '0', #{type})
+    </insert>
+    <select id="LXhAssetSelect" resultType="map">
+        SELECT a.surplus, a.bur_money FROM usdt.sub_money a
+        WHERE a.pid = #{userid} AND a.isdel = '0'
+    </select>
+
+</mapper>

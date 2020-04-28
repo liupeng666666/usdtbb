@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.kline.Dao.KlineBbOrderDao">
+    <select id="BbOrdersSelect" resultType="map">
+        SELECT
+        a.max,
+        a.min,
+        b.univalent as 'open',
+        c.univalent as 'close',
+        a.number as 'volume'
+        FROM
+        (
+        SELECT
+        max(univalent) AS 'max',
+        min(univalent) AS 'min',
+        currency_news_id,
+        sum(number) AS 'number'
+        FROM
+        bb_order
+        WHERE
+        currency_news_id = #{pid} and createtime BETWEEN #{createtime} and now()
+        ) AS a
+        INNER JOIN (
+        SELECT
+        currency_news_id,
+        univalent
+        FROM
+        bb_order
+        WHERE
+        currency_news_id = #{pid} and createtime BETWEEN #{createtime} and now()
+        ORDER BY
+        createtime ASC
+        LIMIT 1
+        ) AS b ON a.currency_news_id = b.currency_news_id
+        INNER JOIN (
+        SELECT
+        currency_news_id,
+        univalent
+        FROM
+        bb_order
+        WHERE
+        currency_news_id = #{pid} and createtime BETWEEN #{createtime} and now()
+        ORDER BY
+        createtime DESC
+        LIMIT 1
+        ) AS c ON a.currency_news_id = c.currency_news_id
+    </select>
+
+</mapper>

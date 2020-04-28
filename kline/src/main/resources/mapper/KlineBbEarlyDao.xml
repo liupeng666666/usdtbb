@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.kline.Dao.KlineBbEarlyDao">
+    <select id="BbEarlysSelect" resultType="map">
+        SELECT DATE_FORMAT(a.updatetime,'%Y-%m-%d %H:%i:%S') as 'updatetime',
+        a.*, b.currencyid,
+        b.`minute`,
+        b.sxf,
+        c.money,
+        d.surplus
+        FROM
+        bb_early_record AS a
+        INNER JOIN bb_early AS b ON a.bb_early = b.pid
+        INNER JOIN bb_currency_news AS c ON c.pid = a.currency_news_id
+        INNER JOIN bb_money as d on d.currencyid=b.currencyid and a.userid=d.userid
+        WHERE
+        a.isdel = 0
+        AND a.state != 2
+        AND b.state = 0
+        AND b.isdel = 0
+        AND c.state = 0
+        AND c.isdel = 0
+        and d.surplus &gt;=b.sxf
+    </select>
+    <update id="BbEarlyUpdate">
+        update bb_early_record
+        <set>
+            state=#{state},
+            <if test="num!=null and num!=''">
+                num=num+1,
+            </if>
+        </set>
+        <where>
+            pid=#{pid}
+        </where>
+    </update>
+
+    <select id="BbMoneySelect" resultType="map">
+        select * from bb_money where userid=#{userid} and currencyid=#{currencyid} and state=0 and isdel=0
+    </select>
+    <update id="BbMoneyUpdate">
+        update bb_money set surplus=surplus-#{sxf} where userid=#{userid} and currencyid=#{currencyid}
+    </update>
+
+    <insert id="BbEarlyInsert">
+        INSERT INTO `usdtbb`.`bb_early_record_log` (
+        `pid`,
+        `money`,
+        `createtime`,
+        `bb_early_record`,
+        `bfb`,
+        `userid`
+        )
+        VALUES
+        (
+        uuid(),
+        #{money},
+        now(),
+        #{bb_early_record},
+        #{bfb},
+        #{userid}
+        );
+    </insert>
+</mapper>

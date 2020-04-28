@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="launcher:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cbe5d881-a23b-42ca-8fd7-5064e33be09f" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Dao/KlineBbEarlyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Dao/KlineBbEarlyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Dao/KlineBbKlineNewsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Dao/KlineBbKlineNewsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Dao/KlineBbOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Dao/KlineBbOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Dao/KlineBbPlanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Dao/KlineBbPlanDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Impl/KlineBbEarlyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Impl/KlineBbEarlyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Impl/KlineCurrencyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Impl/KlineCurrencyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Impl/KlinePlanImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Impl/KlinePlanImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Interface/KlineCurrencyInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Interface/KlineCurrencyInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Interface/KlinePlanInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/Interface/KlinePlanInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/task/KlineCurrencyTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/task/KlineCurrencyTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/resources/mapper/KlineBbEarlyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/resources/mapper/KlineBbEarlyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/resources/mapper/KlineBbKlineNewsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/resources/mapper/KlineBbKlineNewsDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/resources/mapper/KlineBbOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/resources/mapper/KlineBbOrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kline/src/main/resources/mapper/KlineBbPlanDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kline/src/main/resources/mapper/KlineBbPlanDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com/whp/Application/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com/whp/Application/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com/whp/config/ErrorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com/whp/config/ErrorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com/whp/config/jwt/JWTToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com/whp/config/jwt/JWTToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com/whp/config/jwt/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com/whp/config/jwt/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com/whp/config/shrio/MyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com/whp/config/shrio/MyRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/java/com/whp/config/shrio/ShiroConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/java/com/whp/config/shrio/ShiroConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/launcher/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/launcher/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Dao/MqBbCurrencyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Dao/MqBbCurrencyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Dao/MqBbMoneyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Dao/MqBbMoneyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Dao/MqBbOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Dao/MqBbOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Dao/MqBbSellDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Dao/MqBbSellDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Impl/MqBbOrderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Impl/MqBbOrderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Impl/MqImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Impl/MqImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Task/ConnectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Task/ConnectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Task/MqTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Task/MqTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/socket/WebScketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/socket/WebScketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/socket/WebSocketInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/socket/WebSocketInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/resources/mapper/MqBbCurrencyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/resources/mapper/MqBbCurrencyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/resources/mapper/MqBbMoneyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/resources/mapper/MqBbMoneyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/resources/mapper/MqBbOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/resources/mapper/MqBbOrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysocket/src/main/resources/mapper/MqBbSellDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysocket/src/main/resources/mapper/MqBbSellDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbCurrencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbCurrencyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbCurrencyNewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbCurrencyNewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbEarlyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbEarlyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbFreeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbFreeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbKlineNewsSelectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbKlineNewsSelectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbPlanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbPlanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbSellController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbSellController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbTransferController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbTransferController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbUsdtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbUsdtController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbWalletController.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbWalletController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbAdDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbAdDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyNewsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyNewsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbEarlyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbEarlyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbFreeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbFreeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbKlineDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbKlineDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbKlineNewsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbKlineNewsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbLoginLogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbLoginLogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbMinuteDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbMinuteDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbMoneyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbMoneyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbPlanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbPlanDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbSellDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbSellDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbSysWalletDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbSysWalletDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbTransferDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbTransferDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbUsdtDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbUsdtDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/LBbAssetOrederDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/LBbAssetOrederDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/LSubUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/LSubUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbAdImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbAdImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbCurrencyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbCurrencyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbCurrencyNewsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbCurrencyNewsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbEarlyImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbEarlyImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbFreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbFreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbKlineNewsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbKlineNewsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbLoginLogImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbLoginLogImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbMinuteImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbMinuteImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbOrderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbOrderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbPlanImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbPlanImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbSellImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbSellImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbTransferImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbTransferImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbUsdtImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbUsdtImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbCurrencyInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbCurrencyInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbCurrencyNewsInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbCurrencyNewsInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbEarlyInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbEarlyInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbFreeInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbFreeInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbKlineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbKlineInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbLoginLogInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbLoginLogInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbOrderInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbOrderInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbPlanInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbPlanInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbSellInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbSellInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbTransferInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbTransferInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbUsdtInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbUsdtInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/utils/Sms.java" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/utils/Sms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyNewsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyNewsDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbEarlyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbEarlyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbFreeDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbFreeDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbKlineNewsDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbKlineNewsDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbLoginLogDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbLoginLogDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbMinuteDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbMinuteDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbMoneyDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbMoneyDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbOrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbPlanDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbPlanDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbSellDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbSellDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbSysWalletDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbSysWalletDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbTransferDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbTransferDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/BbUsdtDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/BbUsdtDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/LBbAssetOrderDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/LBbAssetOrderDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/src/main/resources/mapper/LSubUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/other/src/main/resources/mapper/LSubUserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/usdtbb/user/Dao/SubUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/usdtbb/user/Dao/SubUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/whp/usdtbb/user/Interface/SubUserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/whp/usdtbb/user/Interface/SubUserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/mapper/SubUserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/mapper/SubUserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/GoogleAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/GoogleAuthenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/HttpClientUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/HttpClientUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/ImgUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/ImgUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/JWTUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/JWTUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/MD5Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/PropertiesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/PropertiesUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/RedisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/RedisUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/SSLClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/SSLClient.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/launcher/target/" />
+    <ignored path="$PROJECT_DIR$/utils/target/" />
+    <ignored path="$PROJECT_DIR$/user/target/" />
+    <ignored path="$PROJECT_DIR$/other/target/" />
+    <ignored path="$PROJECT_DIR$/kline/target/" />
+    <ignored path="$PROJECT_DIR$/mysocket/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbLoginLogDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbCurrencyImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="42" column="29" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbCurrencyNewsImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2997">
+              <caret line="123" column="36" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbTransferImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2457">
+              <caret line="102" column="44" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyNewsDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2187">
+              <caret line="81" column="32" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/LBbAssetOrderDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1269">
+              <caret line="47" column="29" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbUsdtDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="98" selection-start-line="6" selection-start-column="98" selection-end-line="6" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbEarlyDao.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbMinuteDao.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>BbMoneyInsertHua</find>
+      <find>查询币币money表</find>
+      <find>---</find>
+      <find>BbMoneyUpdateHua</find>
+      <find>FbMoneyUpdateHua</find>
+      <find>BbFreeSelectbySort</find>
+      <find>getAdSelect</find>
+      <find>BbCurrencyDealSelect</find>
+      <find>frozen</find>
+      <find>币币</find>
+      <find>币币账户</find>
+      <find>BbSysWalletSelect</find>
+      <find>System</find>
+      <find>left_number</find>
+      <find>BbCurrencyNewsSelect</find>
+      <find>LXhAssetSelect</find>
+      <find>105</find>
+      <find>LSubAssetSub</find>
+      <find>currencySelectByStyle</find>
+      <find>LFbAssetInsert</find>
+      <find>ZERO</find>
+      <find>getBbCurrencyNewsSelect</find>
+      <find>BbSellaSelect</find>
+      <find>driverClassName</find>
+      <find>getBbCurrencyNewsSelectOptional</find>
+      <find>insert</find>
+      <find>BbCurrencyOfName</find>
+      <find>getBbCurrencyNewsSelectByStyle</find>
+      <find>&lt;for</find>
+      <find>add</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>bb_plan</replace>
+      <replace>BbPlan</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbTransferDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbTransferInterface.java" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/BbPlanDao.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbKlineImpl.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbTransferController.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbSellController.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbMoneyDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/LBbAssetOrederDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/LBbAssetOrderDao.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/BbFreeDao.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbFreeImpl.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbCurrencyImpl.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbCurrencyInterface.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbCurrencyController.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbAdDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Utils/Sms.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/GoogleAuthenticator.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/SubUserDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/SubUserDao.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbSysWallet.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/LSubUserDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/utils/Sms.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/utils/TaskUtils.java" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/LSubUserDao.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbSysWalletDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/BbSysWalletDao.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbUsdtDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbUsdtInterface.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbUsdtImpl.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbUsdtController.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbWallet.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/HttpClientUtils.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/SSLClient.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbWalletDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbWalletController.java" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/BbMoneyDao.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/BbUsdtDao.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/BbTransferDao.xml" />
+        <option value="$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Task/MqTask.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbTransferImpl.java" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyDao.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyDao.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbFreeController.java" />
+        <option value="$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/task/KlineCurrencyTask.java" />
+        <option value="$PROJECT_DIR$/launcher/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbCurrencyNewsImpl.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbCurrencyNewsInterface.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbCurrencyNewsController.java" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyNewsDao.java" />
+        <option value="$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyNewsDao.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="usdtbb" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="usdtbb" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="250" />
+    <option name="y" value="3" />
+    <option name="width" value="1143" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="whp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="Impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="usdtbb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="usdtbb" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564137914888" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.whp.usdtbb.utils" />
+      <recent name="com.whp.usdtbb.other.Impl" />
+      <recent name="com.whp.usdtbb.other.Interface" />
+      <recent name="com.whp.usdtbb.other.Dao" />
+      <recent name="com.whp.usdtbb.other.Controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\ideapro\usdtbb\other\src\main\java\com\whp\usdtbb\other\utils" />
+      <recent name="F:\ideapro\usdtbb\other\src\main\java\com\whp\usdtbb\other\Utils" />
+      <recent name="E:\IDEA\项目\usdtbb\kline\src\main\resources\mapper" />
+      <recent name="E:\IDEA\项目\usdtbb\other\src\main\resources\mapper" />
+      <recent name="E:\IDEA\项目\usdtbb\mysocket\src\main\resources\mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.未命名">
+    <configuration default="true" type="Application" factoryName="应用程序">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsdtbbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="usdtbb" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.whp.usdtbb.UsdtbbApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="未命名" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="launcher:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="未命名_usdtbb" />
+        <option name="HTTP_PORT" value="8095" />
+        <option name="JNDI_PORT" value="1096" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="54790" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="launcher:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.UsdtbbApplication" />
+      <item itemvalue="Tomcat Server.未命名" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cbe5d881-a23b-42ca-8fd7-5064e33be09f" name="默认的" comment="" />
+      <created>1560472531175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560472531175</updated>
+      <workItem from="1560472535743" duration="123806000" />
+      <workItem from="1561599464672" duration="42434000" />
+      <workItem from="1560930697459" duration="2356000" />
+      <workItem from="1560993352632" duration="12593000" />
+      <workItem from="1561079081365" duration="11311000" />
+      <workItem from="1561338468561" duration="15803000" />
+      <workItem from="1561424590783" duration="15565000" />
+      <workItem from="1561510799243" duration="18943000" />
+      <workItem from="1561597134964" duration="18118000" />
+      <workItem from="1561683069157" duration="8539000" />
+      <workItem from="1561942889469" duration="5039000" />
+      <workItem from="1562031183863" duration="1749000" />
+      <workItem from="1562115725752" duration="1234000" />
+      <workItem from="1562130668790" duration="977000" />
+      <workItem from="1562202499505" duration="3082000" />
+      <workItem from="1562575276102" duration="6036000" />
+      <workItem from="1562633780325" duration="14993000" />
+      <workItem from="1562719874485" duration="18812000" />
+      <workItem from="1562756915759" duration="363000" />
+      <workItem from="1562806210286" duration="30847000" />
+      <workItem from="1562849049473" duration="2314000" />
+      <workItem from="1562892145226" duration="19694000" />
+      <workItem from="1562978735343" duration="15372000" />
+      <workItem from="1562659866189" duration="35552000" />
+      <workItem from="1563013958261" duration="1226000" />
+      <workItem from="1563064760114" duration="6961000" />
+      <workItem from="1563152890941" duration="11025000" />
+      <workItem from="1563238964045" duration="19980000" />
+      <workItem from="1563324647289" duration="1674000" />
+      <workItem from="1563411508939" duration="969000" />
+      <workItem from="1563422739098" duration="1183000" />
+      <workItem from="1563497640042" duration="1557000" />
+      <workItem from="1563756467692" duration="7764000" />
+      <workItem from="1563850345036" duration="13872000" />
+      <workItem from="1563947703893" duration="4700000" />
+      <workItem from="1564028480452" duration="919000" />
+      <workItem from="1564031844760" duration="11240000" />
+      <workItem from="1564102556956" duration="24525000" />
+      <workItem from="1564188754238" duration="7277000" />
+      <workItem from="1564392328294" duration="624000" />
+      <workItem from="1564449241573" duration="677000" />
+      <workItem from="1564539453397" duration="2058000" />
+      <workItem from="1564620306633" duration="5173000" />
+      <workItem from="1564707089728" duration="3308000" />
+      <workItem from="1564965954164" duration="1133000" />
+      <workItem from="1564983714039" duration="771000" />
+      <workItem from="1564989361887" duration="6182000" />
+      <workItem from="1565054273191" duration="13728000" />
+      <workItem from="1565140768593" duration="3621000" />
+      <workItem from="1565225779680" duration="9780000" />
+      <workItem from="1565311269952" duration="801000" />
+      <workItem from="1565329373691" duration="14000" />
+      <workItem from="1565329748002" duration="6351000" />
+      <workItem from="1565571165000" duration="1793000" />
+      <workItem from="1565601402742" duration="4144000" />
+      <workItem from="1565657296436" duration="6356000" />
+      <workItem from="1565744441472" duration="722000" />
+      <workItem from="1565753548357" duration="1214000" />
+      <workItem from="1565763772528" duration="2317000" />
+      <workItem from="1566177487444" duration="17720000" />
+      <workItem from="1566267663896" duration="6942000" />
+      <workItem from="1566295409451" duration="238000" />
+      <workItem from="1566295664086" duration="598000" />
+      <workItem from="1566348727124" duration="726000" />
+      <workItem from="1566434762956" duration="3697000" />
+      <workItem from="1566454106480" duration="344000" />
+      <workItem from="1566521890321" duration="1271000" />
+      <workItem from="1566527540916" duration="5867000" />
+      <workItem from="1566898515060" duration="1456000" />
+      <workItem from="1568776805034" duration="645000" />
+      <workItem from="1568783630880" duration="1389000" />
+      <workItem from="1568786030575" duration="969000" />
+      <workItem from="1569204050529" duration="2844000" />
+      <workItem from="1569374619220" duration="352000" />
+      <workItem from="1569551006113" duration="1323000" />
+      <workItem from="1569748043667" duration="551000" />
+      <workItem from="1569808389332" duration="657000" />
+      <workItem from="1569821635542" duration="1201000" />
+      <workItem from="1571304040275" duration="155000" />
+      <workItem from="1571384969775" duration="121000" />
+      <workItem from="1574039169472" duration="98000" />
+      <workItem from="1574039400314" duration="741000" />
+      <workItem from="1574042676135" duration="503000" />
+      <workItem from="1574390240306" duration="308000" />
+      <workItem from="1575534538501" duration="45000" />
+      <workItem from="1587109703642" duration="157000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="479111000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23600605" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="设计师" order="7" />
+      <window_info id="Designer" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.3737705" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5015129" side_tool="true" weight="0.25081968" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32850242" />
+      <window_info anchor="bottom" id="调试" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="消息" order="11" weight="0.32419354" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="运行" order="13" sideWeight="0.4978678" weight="0.5064516" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="16" />
+      <window_info anchor="bottom" id="Database Changes" order="17" />
+      <window_info anchor="bottom" id="Messages" order="18" sideWeight="0.49924356" weight="0.3295082" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.46747354" />
+      <window_info anchor="right" id="控制板" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Palette" order="10" />
+      <window_info anchor="right" id="Maven" order="11" weight="0.16717096" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Capture Tool" order="0" />
+      <window_info id="设计师" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.24962178" />
+      <window_info id="Structure" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="1" weight="0.32850242" />
+      <window_info anchor="bottom" id="调试" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="消息" order="5" weight="0.32850242" />
+      <window_info anchor="bottom" id="Spring" order="6" />
+      <window_info anchor="bottom" id="运行" order="7" weight="0.84219" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Message" order="9" />
+      <window_info anchor="bottom" id="Find" order="10" />
+      <window_info anchor="bottom" id="Run" order="11" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="15" />
+      <window_info anchor="right" id="Maven Projects" order="0" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="控制板" order="4" />
+      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Task/MqTask.java</url>
+          <line>24</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="((HashMap.Node)json.entrySet().toArray()[0]).getValue()" custom="java.util.HashMap.Node" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/HttpClientUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbCurrencyInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbWalletDao.java" />
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbWalletController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbSysWalletDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyDao.java.BASE.java" />
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyDao.java.LOCAL.java" />
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyDao.java.REMOTE.java" />
+    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launcher/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launcher/src/main/java/com/whp/config/DruidDBConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysocket/src/main/java/com/whp/usdtbb/mysocket/Task/MqTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="31" selection-start-line="31" selection-start-column="2" selection-end-line="43" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbTransferController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/AuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="53" column="68" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbAdDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbAdInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbAdImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbFreeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbFreeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbKlineNewsInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbFreeInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbFreeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kline/src/main/java/com/whp/usdtbb/kline/task/KlineCurrencyTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbSellController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="67" column="53" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbCurrencyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/com/whp/usdtbb/utils/RedisUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/launcher/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Interface/BbCurrencyNewsInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="135" selection-start-line="9" selection-start-column="135" selection-end-line="9" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Controller/BbCurrencyNewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="45" column="126" selection-start-line="45" selection-start-column="126" selection-end-line="45" selection-end-column="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Dao/BbCurrencyNewsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/LSubUserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbTransferDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbSysWalletDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbSellDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1593">
+          <caret line="69" column="29" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbPlanDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2511" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbOrderDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbMoneyDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbKlineNewsDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbKlineDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbFreeDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbLoginLogDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbCurrencyNewsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2997">
+          <caret line="123" column="36" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbTransferImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2457">
+          <caret line="102" column="44" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyNewsDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbCurrencyDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2187">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/LBbAssetOrderDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1269">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbUsdtDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="98" selection-start-line="6" selection-start-column="98" selection-end-line="6" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbEarlyDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/resources/mapper/BbMinuteDao.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/src/main/java/com/whp/usdtbb/other/Impl/BbCurrencyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

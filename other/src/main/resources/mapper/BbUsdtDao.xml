@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.other.Dao.BbUsdtDao">
+
+    <insert id="BbUsdtInsert">
+        INSERT INTO `bb_usdt`(`pid`,
+        `style`,`isdel`,`createtime`,`to_address`,`examine`,`money`,`userid`,`trade`,`currencyid`)
+        VALUES (uuid(),'2','0',now(),#{to_address},'0',#{money},#{userid},#{trade},#{currencyid});
+    </insert>
+    <select id="BbUsdtSelectOfTixian" resultType="map">
+        SELECT DATE_FORMAT(a.createtime, "%Y/%m/%d %H:%i:%S") AS 'datetime', a.* FROM bb_usdt AS a
+        WHERE a.userid = #{userid}
+        AND a.currencyid = #{map.currencyid}
+        AND a.style = #{map.style}
+        AND a.isdel = '0'
+        ORDER BY a.createtime DESC limit #{page},#{num}
+    </select>
+    <select id="BbUsdtSelectOfTixianCount" resultType="int">
+        SELECT count(0) FROM bb_usdt AS a
+        WHERE a.userid = #{userid}
+        AND a.currencyid = #{map.currencyid}
+        AND a.style = #{map.style}
+        AND a.isdel = '0'
+    </select>
+    <select id="SubUsdtLog" resultType="map">
+        SELECT
+        *
+        FROM
+        (
+        SELECT
+        "1" AS 'state',
+        a.style,
+        a.money,
+        b.`name`,DATE_FORMAT(a.createtime,'%Y-%m-%d %H:%i:%S') as 'createtime'
+        FROM
+        bb_usdt AS a
+        INNER JOIN bb_currency AS b ON a.currencyid = b.pid
+        WHERE
+        a.style != 0
+        AND a.isdel = 0
+        AND a.examine = 1 and a.userid=#{userid}
+        ) AS a
+        UNION ALL
+        SELECT
+        *
+        FROM
+        (
+        SELECT
+        "2" AS 'state',
+        style,
+        money,
+        codeid AS 'name',
+        DATE_FORMAT(createtime,'%Y-%m-%d %H:%i:%S') as 'createtime'
+        FROM
+        usdtfb.fb_usdt
+        WHERE
+        style != 0
+        AND isdel = 0
+        AND examine = 1 and userid=#{userid}
+        ) AS b
+        UNION ALL
+        SELECT
+        *
+        FROM
+        (
+        SELECT
+        "3" AS 'state',
+        style,
+        money,
+        codeid AS 'name',
+        DATE_FORMAT(createtime,'%Y-%m-%d %H:%i:%S') as 'createtime'
+        FROM
+        usdt.sub_usdt
+        WHERE
+        style != 0
+        AND isdel = 0
+        AND examine = 1 and sub_user_id=#{userid}
+        ) AS c
+
+        ORDER BY createtime desc limit #{page},#{num}
+
+    </select>
+
+</mapper>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.other.Dao.BbSellDao">
+    <insert id="BbSellInsert">
+        INSERT INTO `usdtbb`.`bb_sell` (
+        `pid`,
+        `userid`,
+        `currency_news_id`,
+        `univalent`,
+        `number`,
+        `poundage`,
+        `createtime`,
+        `updatetime`,
+        `volume`,
+        `type`,
+        `state`,
+        `isdel`,
+        `plan`,
+        `planid`,
+        `style`
+        )
+        VALUES
+        (
+        #{pid},
+        #{userid},
+        #{currencyid},
+        #{univalent},
+        #{number},
+        0,
+        now(),
+        now(),
+        0,
+        #{type},
+        0,
+        0,
+        0,
+        #{planid},
+        #{style}
+        );
+    </insert>
+    <select id="BbSellid" resultType="String">
+        select sellid from bb_sell where pid=#{pid}
+    </select>
+    <select id="BbSellSelect" resultType="map">
+        select *,DATE_FORMAT(createtime,'%Y-%m-%d') as 'date',DATE_FORMAT(createtime,'%H:%i:%S') as 'time' from bb_sell
+        where userid=#{userid} and currency_news_id=#{currency_news_id}
+        <if test="state==0">
+            and plan=0
+        </if>
+        <if test="type!=null and type!=''">
+            and (state=2 or state=3)
+
+        </if>
+        ORDER BY createtime desc;
+    </select>
+    <select id="BbSellUpdateDan" resultType="map">
+        select a.*,b.currency_left,b.currency_right from (select * from bb_sell where isdel=0 and pid=#{pid} and
+        userid=#{userid} and (state=0 or state=1) ) as a INNER JOIN bb_currency_news as b on a.currency_news_id=b.pid
+    </select>
+    <update id="BSellUpdate">
+        update bb_sell set state=3 where pid=#{pid}
+    </update>
+    <select id="BbSellSum" resultType="map">
+        select sum(number) as 'number',sum(volume) as 'volume' from bb_sell where state!=3 and state!=2 and
+        currency_news_id=#{currency_news_id} and type=#{type} and univalent=#{un}
+    </select>
+
+    <select id="BbSellStateSelect" resultType="String">
+        select pid from bb_sell where userid=#{userid} and currency_news_id=#{currency_news_id} and state!=3 and
+        state!=2
+    </select>
+
+
+    <select id="BbSellaSelect" resultType="map">
+        select *,DATE_FORMAT(createtime,'%Y-%m-%d') as 'date',DATE_FORMAT(createtime,'%H:%i:%S') as 'time' from bb_sell
+        where userid=#{map.userid} and currency_news_id=#{map.pid} and isdel=0 and plan=0
+        <if test="map.start!=null and map.start!='' and map.end!=null and map.end!=''">
+            and createtime between #{map.start} and #{map.end}
+        </if>
+        <if test="map.type!=null and map.type!=''">
+            and type=#{map.type}
+        </if>
+        <if test="map.state!=null and map.state!=''">
+            and state=#{map.state}
+        </if>
+        order by createtime desc limit #{page},#{num}
+    </select>
+
+    <select id="BbSellaCount" resultType="int">
+        select count(0) from bb_sell where userid=#{map.userid} and currency_news_id=#{map.pid} and isdel=0 and plan=0
+        <if test="map.start!=null and map.start!='' and map.end!=null and map.end!=''">
+            and createtime between #{map.start} and #{map.end}
+        </if>
+        <if test="map.type!=null and map.type!=''">
+            and type=#{map.type}
+        </if>
+        <if test="map.state!=null and map.state!=''">
+            and state=#{map.state}
+        </if>
+        <if test="map.plan!=null and map.plan!=''">
+            and plan=#{map.plan}
+        </if>
+    </select>
+
+
+    <select id="BbSellbSelect" resultType="map">
+        select IFNULL(b.state,a.state) as 'state',a.* from (select *,DATE_FORMAT(createtime,'%Y-%m-%d') as
+        'date',DATE_FORMAT(createtime,'%H:%i:%S') as 'time' from bb_plan where userid=#{map.userid} and
+        currency_news_id=#{map.pid} and isdel=0) as a left join bb_sell as b on a.pid=b.planid
+        <where>
+            <if test="map.start!=null and map.start!='' and map.end!=null and map.end!=''">
+                and a.createtime between #{map.start} and #{map.end}
+            </if>
+            <if test="map.type!=null and map.type!=''">
+                and a.type=#{map.type}
+            </if>
+            <if test="map.state!=null and map.state!=''">
+                <if test="map.state==0">
+                    and (( b.state=#{map.state} and a.trigger=1) or(a.state=#{map.state} and a.trigger=0))
+
+                </if>
+                <if test="map.state!=0">
+                    and b.state=#{map.state} and a.trigger=1
+                </if>
+            </if>
+        </where>
+        order by createtime desc limit #{page},#{num}
+    </select>
+
+    <select id="BbSellbCount" resultType="int">
+        select count(0) from (select *,DATE_FORMAT(createtime,'%Y-%m-%d') as 'date',DATE_FORMAT(createtime,'%H:%i:%S')
+        as 'time' from bb_plan where userid=#{map.userid} and isdel=0) as a left join bb_sell as b on a.pid=b.planid
+        <where>
+            <if test="map.start!=null and map.start!='' and map.end!=null and map.end!=''">
+                and a.createtime between #{map.start} and #{map.end}
+            </if>
+            <if test="map.type!=null and map.type!=''">
+                and a.type=#{map.type}
+            </if>
+            <if test="map.state!=null and map.state!=''">
+                <if test="map.state==0">
+                    and (( b.state=#{map.state} and a.trigger=1) or(a.state=#{map.state} and a.trigger=0))
+
+                </if>
+                <if test="map.state!=0">
+                    and b.state=#{map.state} and a.trigger=1
+                </if>
+            </if>
+        </where>
+    </select>
+
+    <select id="BbSellAppSelect" resultType="map">
+        select a.*,DATE_FORMAT(a.createtime,'%Y-%m-%d') as 'date',DATE_FORMAT(a.createtime,'%H:%i:%S') as 'time' from
+        bb_sell as a INNER JOIN bb_currency_news as b on a.currency_news_id=b.pid where a.userid=#{map.userid} and
+        a.isdel=0 and a.plan=0 and b.state=0 and b.isdel=0
+        <if test="map.start!=null and map.start!='' and map.end!=null and map.end!=''">
+            and a.createtime between #{map.start} and #{map.end}
+        </if>
+        <if test="map.type!=null and map.type!=''">
+            and a.type=#{map.type}
+        </if>
+        <if test="map.state!=null and map.state!=''">
+            and a.state=#{map.state}
+        </if>
+        <if test="map.currencyid!=null and map.currencyid!=''">
+            and a.currency_news_id=#{map.currencyid}
+        </if>
+        order by a.createtime desc limit #{page},#{num}
+    </select>
+
+
+    <select id="BbSellAppSellSelect" resultType="map">
+        select *,DATE_FORMAT(createtime,'%Y-%m-%d') as 'date',DATE_FORMAT(createtime,'%H:%i:%S') as 'time' from bb_sell
+        where userid=#{map.userid} and isdel=0 and (state=2 or state=3)
+        <if test="map.start!=null and map.start!='' and map.end!=null and map.end!=''">
+            and createtime between #{map.start} and #{map.end}
+        </if>
+        <if test="map.type!=null and map.type!=''">
+            and type=#{map.type}
+        </if>
+        <if test="map.currencyid!=null and map.currencyid!=''">
+            and currency_news_id=#{map.currencyid}
+        </if>
+        <!--<if test="map.state!=null and map.state!=''">-->
+        <!--and state=#{map.state}-->
+        <!--</if>-->
+        order by createtime desc limit #{page},#{num}
+    </select>
+
+
+    <select id="BbSellRedisSelect" resultType="map">
+        select IFNULL(sum(number),0) as 'number',IFNULL(sum(volume),0) as 'volume',univalent from bb_sell where state!=3
+        and isdel=0 and currency_news_id=#{currencyid} and type=#{type} GROUP BY univalent;
+    </select>
+</mapper>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.other.Dao.BbCurrencyDao">
+
+    <!--根据用户名查询用户信息 仅程序内部使用-->
+    <select id="getCurrencySelect" resultType="map">
+        SELECT
+        a.*,
+        b.surplus as 'left_surplus',
+        b.frozen as 'left_frozen',
+        c.surplus as 'right_surplus',
+        c.frozen as 'right_frozen'
+        FROM
+        (
+        SELECT
+        *
+        FROM
+        bb_currency_news
+        WHERE
+        state = 0
+        AND isdel = 0
+        AND pid = #{pid}
+        ) AS a
+        LEFT JOIN (select * from bb_money where userid=#{userid}) AS b ON b.currencyid = a.currency_left
+        LEFT JOIN (select * from bb_money where userid=#{userid}) AS c ON c.currencyid = a.currency_right
+        limit 1;
+    </select>
+
+    <select id="currencySelectByStyle" resultType="map">
+        select * from bb_currency where style=1 and isdel=0 and state=0 order by sort asc
+    </select>
+    <select id="BbCurrencyNewsSelect" resultType="map">
+        SELECT
+        a.*, b.`open` as 'left_open',
+        DATE_FORMAT(b.opentime,'%Y-%m-%d %H:%i:%S') as 'left_opentime',
+        c.`open` as 'right_open',
+        DATE_FORMAT(c.opentime,'%Y-%m-%d %H:%i:%S') as 'right_opentime',
+        b.img,
+        b.name as 'left_name',
+        c.name as 'right_name',
+        b.poundage as 'left_poundage',
+        c.poundage as 'right_poundage',
+        IFNULL(d.num,0) as 'num',
+        c.character,
+        c.img as 'right_img',
+        c.digit
+        FROM
+        bb_currency_news AS a
+        LEFT JOIN bb_currency AS b ON a.currency_left = b.pid
+        LEFT JOIN bb_currency AS c ON c.pid = a.currency_right
+        LEFT JOIN (select count(0) as 'num',currency_news_id from bb_free where userid=#{userid} and
+        currency_news_id=#{pid}) as d on d.currency_news_id=a.pid
+        WHERE
+        a.state = 0
+        AND a.isdel = 0
+        AND b.state = 0
+        AND b.isdel = 0
+        AND c.state = 0
+        AND c.isdel = 0
+        and a.pid=#{pid}
+
+    </select>
+
+    <update id="BbCurrencyUpdate">
+        update bb_currency set `open`=1 where pid=#{pid}
+    </update>
+
+    <select id="CurrencyUsdt" resultType="map">
+        select * from bb_currency_news where currency_left=#{left} and currency_right=(select pid from bb_currency where
+        couple=1 limit 1)
+    </select>
+
+    <select id="BbCurrencyDealSelect" resultType="map">
+        select bc.img,bc.name,bc.close,bc.pid,bc.character,bc.market,IFNULL(bm.surplus,0) as
+        'surplus',IFNULL(bm.frozen,0) as 'frozen',bm.* from bb_currency bc
+        left join (select * from bb_money where userid=#{userid} and isdel=0 and state=0) bm on bm.currencyid=bc.pid
+        where bc.isdel=0 and bc.state=0
+    </select>
+    <select id="BbCurrencyHua" resultType="map">
+        select * from bb_currency where isdel=0 and state=0 and name=#{name} limit 1
+    </select>
+    <select id="FbCurrencySelectByName" resultType="map">
+        select * from usdtfb.fb_currency where isdel=0 and state=0 and name=#{name}
+    </select>
+    <select id="BbCurrencyOfName" resultType="map">
+        select * from bb_currency where isdel=0 and state=0
+    </select>
+    <select id="BbCurrencyById" resultType="map">
+        select * from bb_currency where isdel=0 and state=0 and pid=#{pid}
+    </select>
+</mapper>

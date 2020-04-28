@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.other.Dao.BbCurrencyNewsDao">
+
+    <select id="getBbCurrencyNewsSelect" resultType="map">
+        SELECT * FROM bb_currency_news bcn
+        join(select * from bb_currency where style=1) bc1 on bc1.pid=bcn.currency_left
+        join(select * from bb_currency b where b.style=1 and b.couple=1) bc2 on bc2.pid=bcn.currency_right
+        where bcn.state=0 and bcn.isdel=0
+    </select>
+    <select id="getBbCurrencyNewsSelectByStyle" resultType="map">
+        SELECT bcn.*,IFNULL(d.money, 1) AS 'usdt_money',c.character,b.img as img,c.digit FROM bb_currency_news bcn
+        INNER JOIN bb_currency AS b ON bcn.currency_left = b.pid
+        INNER JOIN bb_currency AS c ON c.pid = bcn.currency_right
+        LEFT JOIN (
+        SELECT a.currency_left, a.money,a.name FROM bb_currency_news AS a
+        INNER JOIN bb_currency AS b ON a.currency_right = b.pid
+        WHERE a.state = 0 AND a.isdel = 0 AND b.couple = 1
+        ) AS d ON c.pid = d.currency_left
+        where bcn.state=0 and bcn.isdel=0 and bcn.style=1
+    </select>
+
+    <select id="getBbCurrencyNewsSelectOptional" resultType="map" parameterType="String">
+        select * from ( SELECT bcn.*,bc1.img,bc1.name as bcname,bc1.market,bc1.type,bc1.open,bc2.character,bc2.open as
+        open2,bc2.digit,bf.sort,bf.currency_news_id,bc1.sort as 'bc_sort' FROM bb_currency_news bcn
+        join(select * from bb_currency where couple=0) bc1 on bc1.pid=bcn.currency_left
+        join(select * from bb_currency b where b.style=1) bc2 on bc2.pid=bcn.currency_right
+        left join(select * from bb_free where userid=#{userid}) bf on bf.currency_news_id=bcn.pid
+        where bcn.state=0 and bcn.isdel=0 and bcn.currency_left!=bcn.currency_right
+        <if test="currency_right!=null and currency_right!=''">
+            and bcn.currency_right=#{currency_right}
+        </if>
+        <if test="currency_news_id!=null and currency_news_id!=''">
+            and bf.currency_news_id in (select currency_news_id from bb_free where userid=#{userid})
+        </if>
+        <if test="name!=null and name!=''">
+            and bcn.name like CONCAT('%',#{name},'%')
+        </if>
+        group by currency_left,currency_right) as a
+        order by
+        <if test="sort==0">
+            a.bc_sort asc
+        </if>
+        <if test="sort!=0">
+            a.sort ASC
+        </if>
+
+    </select>
+
+
+    <select id="BbCurrencySort" resultType="map">
+        select a.pid,a.`name` from bb_currency_news as a inner JOIN
+        (select pid from bb_currency where couple=1 and state=0 and isdel=0) as b on a.currency_right=b.pid
+        INNER JOIN (select pid from bb_currency where couple=0 and state=0 and isdel=0 ORDER BY sort asc limit 1) as c
+        on c.pid=a.currency_left
+        limit 1;
+    </select>
+
+    <select id="BbCurrencyDan" resultType="map">
+        select pid,`name` from bb_currency_news where state=0 and isdel=0 and pid=#{pid};
+    </select>
+    <select id="BbCurrencyNewsSort" resultType="map">
+        SELECT
+        a.pid,
+        a.bfb,
+        a.money,
+        a.max,
+        a.min,
+        a.`name`,
+        a.volume,
+        b.img AS 'left_img',
+        b.`name` AS 'left_name',
+        c.`name` AS 'right_name',
+        c.img AS 'right_img',
+        IFNULL(d.money, 1) AS 'usdt_money',c.character
+        FROM
+        bb_currency_news AS a
+        INNER JOIN bb_currency AS b ON a.currency_left = b.pid
+        INNER JOIN bb_currency AS c ON c.pid = a.currency_right
+        LEFT JOIN (
+        SELECT
+        a.currency_left,
+        a.money
+        FROM
+        bb_currency_news AS a
+        INNER JOIN bb_currency AS b ON a.currency_right = b.pid
+        WHERE
+        a.state = 0
+        AND a.isdel = 0
+        AND b.couple = 1
+        ) AS d ON c.pid = d.currency_left
+        WHERE
+        a.state = 0
+        AND a.isdel = 0
+        <if test="state==0">
+            and a.bfb &gt;= 0
+            ORDER BY a.bfb desc limit 10;
+        </if>
+        <if test="state==1">
+            and a.bfb &lt; 0
+            ORDER BY a.bfb asc limit 10;
+        </if>
+        <if test="state==2">
+            ORDER BY a.volume desc limit 10;
+        </if>
+    </select>
+
+    <select id="getBbCurrencyNewsStd" resultType="map">
+        select bcn.currency_left,bcn.currency_right,bcn.money from bb_currency_news bcn
+        join (select * from bb_currency where couple=1) bc on bc.pid=bcn.currency_right
+        where bcn.isdel=0 and bcn.state=0
+    </select>
+
+    <select id="BbCurrencyNewsQB" resultType="map">
+        select pid,currency_left,currency_right,`name` from bb_currency_news where state=0 and isdel=0
+    </select>
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.mysocket.Dao.MqBbMoneyDao">
+
+    <update id="BbMoneyUpdateSurplus">
+        update bb_money
+        <set>
+            surplus=surplus+#{number}
+        </set>
+        <where>
+            and currencyid=#{currencyid}
+            and userid=#{userid}
+        </where>
+    </update>
+
+
+    <update id="BbMoneyUpdateFrozen">
+        update bb_money
+        <set>
+            frozen=frozen-#{number}
+        </set>
+        <where>
+            and currencyid=#{currencyid}
+            and userid=#{userid}
+        </where>
+    </update>
+</mapper>

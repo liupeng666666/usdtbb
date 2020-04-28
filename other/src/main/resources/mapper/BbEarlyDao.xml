@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.other.Dao.BbEarlyDao">
+
+    <!--根据用户名查询用户信息 仅程序内部使用-->
+    <select id="getEarlySelect" resultType="map">
+        SELECT
+        a.*, b.`name` AS 'currency_name'
+        FROM
+        bb_early AS a
+        INNER JOIN bb_currency AS b ON a.currencyid = b.pid
+        WHERE
+        a.state = 0
+        AND a.isdel = 0
+        AND b.state = 0
+        AND b.isdel = 0
+        order by a.minute ASC
+    </select>
+
+    <insert id="BbEarlyRecordInsert">
+        INSERT INTO `usdtbb`.`bb_early_record` (
+        `pid`,
+        `max`,
+        `min`,
+        `currency_news_id`,
+        `isdel`,
+        `state`,
+        `createtime`,
+        `updatetime`,
+        `num`,
+        `userid`,
+        `bb_early`
+        )
+        VALUES
+        (
+        uuid(),
+        #{max},
+        #{min},
+        #{currency_news_id},
+        0,
+        0,
+        now(),
+        now(),
+        0,
+        #{userid},
+        #{bb_early}
+        );
+
+    </insert>
+    <select id="BbEarlyRecordSelect" resultType="map">
+        SELECT
+        a.*, b.sxf,
+        b.`name`,
+        b.`minute`,
+        c.`name` as 'right_name',
+        d.`name` as 'currency_name'
+        FROM
+        bb_early_record AS a
+        INNER JOIN bb_early AS b ON a.bb_early = b.pid
+        INNER JOIN bb_currency AS c ON c.pid = b.currencyid
+        INNER JOIN bb_currency_news AS d ON d.pid = a.currency_news_id
+
+        where a.isdel=0 and b.isdel=0 and c.isdel=0 and d.isdel=0
+        and b.state=0 and c.state=0 and d.state=0
+        and a.userid=#{userid} order by a.createtime desc
+    </select>
+    <update id="BbEarlyRecordUpdate">
+        update bb_early_record set isdel=1 where pid=#{pid}
+    </update>
+
+    <select id="BbEarlyRecordLogSelect" resultType="map">
+        SELECT
+        DATE_FORMAT(a.createtime,'%Y-%m-%d %H:%i:%S') as 'createtime',a.*,IFNULL(d.usdt_money,1) as
+        'usdt_money',IFNULL(d.`name`,c.`name`) as 'name',d.*,b.currency_news_id
+        FROM
+        bb_early_record_log AS a
+        INNER JOIN bb_early_record AS b ON a.bb_early_record = b.pid
+        INNER JOIN bb_currency_news AS c ON c.pid = b.currency_news_id
+        LEFT JOIN (
+        SELECT
+        a.currency_left,a.money as 'usdt_money',a.`name`
+        FROM
+        bb_currency_news AS a
+        INNER JOIN bb_currency AS b ON a.currency_right = b.pid
+        AND b.couple = 1
+        where a.state=0 and a.isdel=0 and b.state=0 and b.isdel=0
+        ) AS d on d.currency_left=c.currency_right
+
+        where b.isdel=0 and c.state=0 and c.isdel=0 and a.userid=#{userid} ORDER by a.createtime desc limit
+        #{page},#{num}
+    </select>
+</mapper>

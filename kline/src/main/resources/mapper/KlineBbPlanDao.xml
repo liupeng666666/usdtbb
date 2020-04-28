@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.kline.Dao.KlineBbPlanDao">
+    <select id="BbPlanSelect" resultType="map">
+        SELECT
+        *
+        FROM
+        bb_plan
+        WHERE
+        `trigger` = 0
+        AND isdel = 0
+        AND currency_news_id=#{pid}
+        AND (
+        min_sell &gt;=#{close}
+        OR max_sell &lt;=#{close}
+        ) and state!=3
+    </select>
+
+    <update id="BbPlanUpdate">
+        update bb_plan set `trigger`=#{trigger}, trigger_money=#{un} where pid=#{pid}
+    </update>
+
+    <insert id="KlineBbSellInsert">
+        INSERT INTO `usdtbb`.`bb_sell` (
+        `pid`,
+        `userid`,
+        `currency_news_id`,
+        `univalent`,
+        `number`,
+        `poundage`,
+        `createtime`,
+        `updatetime`,
+        `volume`,
+        `type`,
+        `state`,
+        `isdel`,
+        `plan`,
+        `planid`
+        )
+        VALUES
+        (
+        #{pid},
+        #{userid},
+        #{currencyid},
+        #{univalent},
+        #{number},
+        0,
+        now(),
+        now(),
+        0,
+        #{type},
+        0,
+        0,
+        #{plan},
+        #{planid}
+        );
+
+
+    </insert>
+
+    <select id="BbSellid" resultType="String">
+        select sellid from bb_sell where pid=#{pid}
+    </select>
+</mapper>

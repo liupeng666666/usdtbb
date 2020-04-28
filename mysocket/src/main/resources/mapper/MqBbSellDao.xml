@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.mysocket.Dao.MqBbSellDao">
+    <update id="BbSellUpdate">
+        update bb_sell set volume=volume+#{volume},state=#{state} where sellid=#{sellid}
+    </update>
+    <select id="BbSellSelect" resultType="map">
+        select IFNULL(sum(number),0) as 'number',IFNULL(sum(volume),0) as 'volume',univalent from bb_sell where state!=3
+        and state!=2 and isdel=0 and currency_news_id=#{currencyid} and type=#{type} and univalent=#{univalent}
+    </select>
+
+    <select id="BbSellSelectZ" resultType="map">
+        select number,volume,userid,sellid from bb_sell where state!=3 and state!=2 and isdel=0 and
+        currency_news_id=#{currencyid} and type=#{type} and univalent=#{univalent}
+
+    </select>
+
+</mapper>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.other.Dao.BbPlanDao">
+    <insert id="BbPlanInsert">
+        INSERT INTO `usdtbb`.`bb_plan` (
+        `pid`,
+        `userid`,
+        `currency_news_id`,
+        `min_un`,
+        `number`,
+        `poundage`,
+        `createtime`,
+        `updatetime`,
+        `volume`,
+        `type`,
+        `state`,
+        `isdel`,
+        `max_un`,
+        `min_sell`,
+        `max_sell`,
+        `style`
+        )
+        VALUES
+        (
+        #{pid},
+        #{userid},
+        #{currencyid},
+        #{min_un},
+        #{number},
+        0,
+        now(),
+        now(),
+        0,
+        #{type},
+        0,
+        0,
+        #{max_un},
+        #{min_sell},
+        #{max_sell},
+        #{style}
+        );
+
+
+    </insert>
+    <select id="BbPlanid" resultType="String">
+        select sellid from bb_plan where pid=#{pid}
+    </select>
+    <select id="BbPlanSelect" resultType="map">
+        select IFNULL(b.state,a.state) as 'state',
+        IFNULL(b.volume,0) as 'volume',a.*,IFNULL(b.univalent,0) as 'univalent' from (select
+        *,DATE_FORMAT(createtime,'%Y-%m-%d') as 'date',DATE_FORMAT(createtime,'%H:%i:%S') as 'time' from bb_plan where
+        userid=#{userid} and currency_news_id=#{currency_news_id} ORDER BY createtime desc) as a LEFT JOIN bb_sell as b
+        on a.pid=b.planid order by a.createtime desc;
+    </select>
+
+    <select id="BbPlanUpdateDan" resultType="map">
+        SELECT
+        IFNULL(b.state,a.state) as 'state',
+        IFNULL(b.volume,0) as 'volume',
+        c.currency_left,
+        c.currency_right,
+        b.pid as 'sell_pid',
+        a.*
+        FROM
+        (
+        SELECT
+        *
+        FROM
+        bb_plan
+        WHERE
+        pid = #{pid}
+        AND userid = #{userid}
+        AND isdel = 0 and state!=3
+        ) AS a
+        LEFT JOIN bb_sell AS b ON a.pid = b.planid
+        INNER JOIN bb_currency_news AS c ON c.pid = a.currency_news_id
+    </select>
+    <update id="BbPlanUpdate">
+        update bb_plan set state=3 where pid=#{pid}
+    </update>
+
+    <select id="BbPlanStateSelect" resultType="String">
+        select a.pid from(select * from bb_plan where userid=#{userid} and currency_news_id=#{currency_news_id}) as a
+        LEFT JOIN bb_sell as b on a.pid=b.planid
+        where a.trigger=0 or b.state=0 or b.state=1 GROUP BY a.pid
+    </select>
+
+    <select id="BbPlanAppSelect" resultType="map">
+        select IFNULL(b.state,a.state) as 'state',b.volume,b.univalent,a.* from (select
+        *,DATE_FORMAT(createtime,'%Y-%m-%d') as 'date',DATE_FORMAT(createtime,'%H:%i:%S') as 'time' from bb_plan where
+        userid=#{map.userid} and isdel=0) as a left join bb_sell as b on a.pid=b.planid INNER JOIN bb_currency_news as c
+        on c.pid=a.currency_news_id
+        <where>
+            c.state=0 and c.isdel=0
+            <if test="map.start!=null and map.start!='' and map.end!=null and map.end!=''">
+                and a.createtime between #{map.start} and #{map.end}
+            </if>
+            <if test="map.type!=null and map.type!=''">
+                and a.type=#{map.type}
+            </if>
+            <if test="map.currencyid!=null and map.currencyid!=''">
+                and a.currency_news_id=#{map.currencyid}
+            </if>
+            <if test="map.state!=null and map.state!=''">
+                <if test="map.state==0">
+                    and (( b.state=#{map.state} and a.trigger=1) or(a.state=#{map.state} and a.trigger=0))
+
+                </if>
+                <if test="map.state!=0">
+                    and b.state=#{map.state} and a.trigger=1
+                </if>
+            </if>
+        </where>
+        order by a.createtime desc limit #{page},#{num}
+    </select>
+</mapper>

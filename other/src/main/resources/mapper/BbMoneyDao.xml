@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.other.Dao.BbMoneyDao">
+    <insert id="BbMoneyInsert">
+        INSERT INTO `usdtbb`.`bb_money` (
+        `pid`,
+        `userid`,
+        `currencyid`,
+        `surplus`,
+        `frozen`,
+        `name`,
+        `createtime`,
+        `updatetime`,
+        `state`,
+        `isdel`
+        )
+        VALUES
+        (
+        uuid(),
+        #{userid},
+        #{currencyid},
+        0,
+        0,
+        #{name},
+        now(),
+        now(),
+        0,
+        0
+        );
+
+
+    </insert>
+
+    <update id="BbMoneyUpdate">
+        update bb_money
+        <set>
+            surplus=surplus-#{number},
+            frozen=frozen+#{number}
+        </set>
+        <where>
+            and currencyid=#{currencyid}
+            and userid=#{userid}
+        </where>
+    </update>
+
+
+    <!--划转-->
+    <select id="BbMoneySelectHua" resultType="map">
+        select * from `usdtbb`.`bb_money` where isdel=0 and state=0 and currencyid=#{currencyid} and userid=#{userid}
+        <if test="lock!=null and lock!=''">
+            for update;
+        </if>
+    </select>
+    <insert id="BbMoneyInsertHua">
+        INSERT INTO `usdtbb`.`bb_money` (
+        `pid`,`userid`,`currencyid`,`surplus`,`frozen`,`name`,`createtime`,`updatetime`,`state`,`isdel`
+        )VALUES
+        (uuid(),#{userid},#{map.currencyid},#{map.surplusAdd},0,#{map.name},now(),now(),0,0 );
+    </insert>
+    <update id="BbMoneyUpdateHua">
+        update `usdtbb`.`bb_money`
+        <set>
+            <if test="state==null or state== ''">
+                surplus=surplus-#{surplus},
+            </if>
+            <if test="type==null or type==''">
+                frozen=frozen+#{frozen},
+            </if>
+        </set>
+        where currencyid=#{currencyid} and userid=#{userid}
+    </update>
+
+    <update id="BbMoneyUpdateHuaAdd">
+        update `usdtbb`.`bb_money` set surplus=surplus+#{map.surplusAdd},updatetime=now()
+        where currencyid=#{map.currencyid} and userid=#{map.userid}
+    </update>
+    <select id="FbMoneySelectForBb" resultType="map">
+        select * from `usdtfb`.`fb_money` where isdel=0 and state=0 and currencyid=#{currencyid} and userid=#{userid}
+        <if test="lock!=null and lock!=''">
+            for update;
+        </if>
+    </select>
+    <update id="FbMoneyUpdateHua">
+        update usdtfb.fb_money
+        <set>
+            <if test="state==null or state== ''">
+                surplus=surplus-#{surplus},
+            </if>
+            <if test="type==null or type==''">
+                frozen=frozen+#{surplus}
+            </if>
+
+        </set>
+        where currencyid=#{currencyid} and userid=#{userid}
+    </update>
+    <select id="BbCurrencyMoney" resultType="map">
+        SELECT
+        a.`name`,a.img,IFNULL(b.surplus,0) as 'surplus',IFNULL(b.frozen,0) as 'frozen',a.max,a.min,a.close,a.poundage
+        FROM
+        (
+        SELECT
+        *
+        FROM
+        bb_currency
+        WHERE
+        pid = #{currencyid}
+        AND state = 0
+        AND isdel = 0
+        ) AS a
+        left JOIN (
+        SELECT
+        *
+        FROM
+        bb_money
+        WHERE
+        userid = #{userid}
+        ) AS b ON a.pid = b.currencyid
+
+        limit 1;
+    </select>
+</mapper>

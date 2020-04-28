@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.whp.usdtbb.other.Dao.BbOrderDao">
+
+    <!--根据用户名查询用户信息 仅程序内部使用-->
+    <select id="getOrderSelect" resultType="map">
+        select *,DATE_FORMAT(createtime,'%H:%i:%S') as 'time' from bb_order where currency_news_id=#{pid} and style=1
+        order by createtime desc limit 20;
+    </select>
+
+</mapper>
